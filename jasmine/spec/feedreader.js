@@ -57,6 +57,10 @@ $(function() {
 /* TODO: Write a new test suite named "The menu" */
 describe('The menu', function(){
 var element = document.querySelector('body');
+var btn;
+  beforeEach(function() {
+    btn = $('.menu-icon-link');
+  });
         /* TODO: Write a test that ensures the menu element is
          * hidden by default. You'll have to analyze the HTML and
          * the CSS to determine how we're performing the
@@ -71,6 +75,15 @@ var element = document.querySelector('body');
           * should have two expectations: does the menu display when
           * clicked and does it hide when clicked again.
           */
+          it('is visible on click', function () {
+            //first click -> menu visible
+            btn.click();
+            expect(element.classList.contains('menu-hidden')).toBe(false);
+            //second click -> menu hidden
+            btn.click();
+            expect(element.classList.contains('menu-hidden')).toBe(true);
+          });
+
 });
     /* TODO: Write a new test suite named "Initial Entries" */
 
