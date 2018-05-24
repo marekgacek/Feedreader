@@ -16,11 +16,11 @@ Windows Git installation Guide
 
 https://www.atlassian.com/git/tutorials/install-git#windows
 
-2. Now command below to clone the repository.
+2. Now use command below to clone the repository.
 
 git clone https://github.com/marekgacek/Feedreader.git
 
-3. Open folder
+3. Open folder with project
 
 Inside the folder there is a file called index.html. Click on this file to load jasmine
 
